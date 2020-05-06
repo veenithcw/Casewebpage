@@ -13,6 +13,7 @@
                 margin: 0 auto;
                 display: block;
                 grid-template-columns: auto;
+                background-color: #EBEEF4;
             }
             
 
@@ -62,7 +63,15 @@
                 max-height: 50px;
                 cursor: pointer;
                 padding: 0px;
-                transform: translateX(1200px) translateY(-7px);
+                transform: translateX(1200px) translateY(2px);
+
+            }
+
+            .user{
+                height: 38px;
+                cursor: pointer;
+                padding-right:10px;
+                transform: translateX(-70px) translateY(-43px);
 
             }
             
@@ -76,24 +85,119 @@
                 flex-direction: row;
             }
 
-            #nav{
-                width: 10%;
+
+/*Nav part starts here*/                       
+
+            .nav{
+                width: 330px;
                 height: auto;
+                margin-top: 0px !important; 
+                margin-left: 10px;
                 position:fixed;
-                padding: 50px 0px 0px 50px;
+                top:65px;
             }
-        
-            #nav a {
-                text-align: center;
-                padding: 10px 10px ;
-                margin: 10px 10px;
+            .namecard{
+                width: auto;
+                height: 86px;
+                background-color:#D1DDEC;
+                margin-bottom: 10px;
+                padding:16px;
+                text-align: left;
                 display: flex;
-                flex-direction: row;
-                text-decoration: underline;
-                font-size: 20px;
-                color: darkgoldenrod;  
-                 
             }
+            .namecardtitlegroup{
+                color:#000000;
+                font: size 14px;
+                line-height:20px;
+                text-align: left;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px 0px 8px;
+                padding:0px;
+                font-weight:400;
+                text-transform:none;
+            }
+            .namcardtitle{
+                width: 230px;
+                font-size: 13px;
+                color: #3170c4;
+                display: block;
+                line-height: 19px;
+                padding-bottom: 0px;
+                font-weight:400;
+                text-transform: uppercase;
+            }
+            .namecardsupertitle{
+                width: 152px;
+                font-size: 14px;
+                line-height: 20px;
+                white-space: normal;
+                font-weight: 500;
+                color: rgb(65, 65, 65);
+                padding-bottom: 10px;
+            }
+            .namecardsubtitle{
+                color: rgb(140, 140, 140);
+                font-size: 13px;
+                line-height: 19px;
+                padding-top: 6px;
+                font-weight:400;
+                vertical-align: bottom;
+                
+            }
+            .namecardimg{
+                overflow: hidden;
+                background-size: 100%;
+                position: relative;
+                top:0px;
+                right:-10px;
+            }
+
+            .navover{
+                width: auto;
+                height: 40px;
+                background-color:#b9ceeb;
+                padding-top: 30px;
+                margin-bottom: 10px;
+                text-decoration: none;
+                padding-right: 10px;
+                text-transform: uppercase;
+                
+            }
+            .navover a {
+                text-decoration: none;
+                color: #3170c4;
+                float: right;
+            }
+            .navhigh{
+                width: auto;
+                height: 50px;
+                background-color: #b9ceeb;
+                padding-top: 20px;
+                margin-bottom: 10px;
+                text-decoration: none;
+                padding-right: 10px;
+                text-transform: uppercase;        
+            }
+            .navhigh a {
+                text-decoration: none;
+                color: #3170c4;
+                float: right;
+            }
+            .navover a:hover {
+                color:#ffa600;
+            }
+            .navhigh a:hover {
+                color:#ffa600;
+            }
+            
+/*Nav part ends here*/                       
+
+
+
+
+
 /*overview starts here*/                       
             
             #content{
@@ -674,5 +778,113 @@
     box-shadow: 1px 1px 4px 1px #464646;
 }
 
+@media screen and (max-width: 768px) {
+                
+    #toprow {
+        
+        flex-direction: column;
+        height: auto;
+    }
+    #overview  {
+        width:auto;
+        height: auto;
+    }
+    #snapshot {
+        width: auto;
+        height: auto;
+        float:none;
+    }
+    #bottomrow {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    #highlights {
+        width: auto;
+        
+    }
+    #wizzlets {
+        width: auto;
+        float:none;
+        display: grid;
+        grid-template-columns: 250px 250px;
+    }
+    #valuesets {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    #pagecontent{
+        max-width:768px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #nav{
+        width: 100%;
+        position: fixed;   
+        margin: 0 auto;
+    }
+    #nav a {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        font-size: 18px;
+        color: #58508d;
+        padding: 0 20px 0 20px;
+        margin: 0 5%;
+        float:left;
+    }
+    #content{
+        width: 88%;
+        float: none;
+        margin: auto;
+        margin-top: 4%;
+        
+    }
+    .bg3{
+        background-color: #a6e3e9;
+}
+@media screen and (max-width: 420px) {
+    #valuesets {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #wizzlets{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #nav span {
+        display:none;
+        
+    }
+    .bg3{
+        background-color: #a6e3e9;
+    }
+    #pagecontent{
+        max-width:768px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #nav{
+        width: 100%;
+        text-align:center;
+        position: fixed;    
+        margin: 0 auto;
+    }
+    #nav a {
+        padding: 0 10px 0 10px;
+        margin: 0 5%;
+        float:left;
+    }
+    
+    #content{
+        width: 88%;
+        float: none;
+        margin: auto;
+        margin-top: 9%;
+    }
+}
 
             
