@@ -887,4 +887,724 @@
     }
 }
 
+
+@media screen and (max-width: 420px) {
+    #valuesets {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #wizzlets{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #nav span {
+        display:none;
+        
+    }
+    .bg3{
+        background-color: #a6e3e9;
+    }
+    #pagecontent{
+        max-width:768px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .nav{
+        width: auto;
+        height: auto;
+        margin-top: 0px; 
+        margin-left: 0px;
+        position: relative;
+        top:50px;
+    }
+    .namecard{
+        width: auto;
+        height: 57px;
+        background-color:#D1DDEC;
+        margin-bottom: 10px;
+        padding:16px;
+        text-align: left;
+        display: flex;
+    }
+    .namecardtitlegroup{
+        color:#000000;
+        font-size: 10px;
+        line-height:20px;
+        text-align: none;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px 0px 8px;
+        padding:0px;
+        font-weight:400;
+        text-transform:none;
+    }
+    .namcardtitle{
+        width: auto;
+        font-size: 10px;
+        color: #3170c4;
+        display: block;
+        line-height: 19px;
+        padding-bottom: 0px;
+        font-weight:400;
+        text-transform: uppercase;
+    }
+    .namecardsupertitle{
+        width: auto;
+        font-size: 11px;
+        line-height: 15px;
+        white-space: normal;
+        font-weight: 500;
+        color: rgb(65, 65, 65);
+        padding-bottom: 10px;
+    }
+    .namecardsubtitle{
+        color: rgb(140, 140, 140);
+        font-size: 10px;
+        line-height: 19px;
+        padding-top: 6px;
+        font-weight:400;
+        vertical-align: bottom;
+        
+    }
+    .namecardimg{
+        overflow: hidden;
+        background-size: auto;
+        position: relative;
+        top:0px;
+        right: -10px;
+    }
+
+    .navover{
+        width: 100%;
+        height: 20px;
+        background-color:#b9ceeb;
+        padding-top: 8px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        padding-right: 10px;
+        text-transform: uppercase;
+        padding-bottom: 2px;
+        
+    }
+    .navover a {
+        text-decoration: none;
+        color: #3170c4;
+        float: none;
+        padding-top: 0px;
+    }
+    .navhigh{
+        width: 100%;
+        height: 20px;
+        background-color: #b9ceeb;
+        padding-top: 8px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        padding-right: 10px;
+        text-transform: uppercase;      
+        padding-bottom: 2px;
+        
+  
+    }
+    .navhigh a {
+        text-decoration: none;
+        color: #3170c4;
+        float: none;
+    }
+    .navover a:hover {
+        color:#ffa600;
+    }
+    .navhigh a:hover {
+        color:#ffa600;
+    }
+    
+    
+    #pagecontent{
+    
+        width:320px;
+        margin: 0 auto;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+/*overview starts here*/                       
+            
+    #content{
+        margin-top:0.25%;
+        margin-left:0;
+        width: auto;
+        height: auto;
+        float: left;
+    }
+    #toprow {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-top: 52px;
+    }
+    #overview {
+        width:320px;
+        height: auto;
+        background-color:white;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .ovcont1 {
+        color:#000000;
+        font-size: 10px;
+        line-height:20px;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px 0px 10px;
+        padding:0px;
+        font-weight:400;
+        text-transform:none;
+    }
+    .ovcont2{
+        color:#000000;
+        font-size: 10px;
+        line-height:20px;
+        vertical-align:top;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px;
+        padding:30px 0px 0px;
+        font-weight:400;
+        text-transform:none;
+    }
+    .ovtitles{
+        color:#000000;
+        font-size: 10px;
+        line-height:10px;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px 0px 0px;
+        padding:0px 10px;
+        font-weight:400;
+        text-transform:none;
+    }
+    .ovtitle{
+        font-size: 14px;
+        color: rgb(86, 149, 230);
+        display: block;
+        line-height: 0px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .ovsupertitle{
+        width: 320px;
+        font-size: 18px;
+        line-height: 26px;
+        white-space: normal;
+        font-weight: 500;
+        color: rgb(43, 43, 43);
+        line-break: 320px;
+    }
+    .ovsubtitle{
+        color:#8c8c8c;
+        font-size: 14px;
+        line-height:20px;
+        vertical-align:top;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px;
+        margin-bottom: 8px;
+        padding: 0px 10px 10px 10px;
+        font-weight:400;
+        text-transform:none;
+        color: rgb(140, 140, 140);
+        display: inline-block;
+    }
+    .image{
+        max-width: 320px;
+        height: auto;
+       
+            
+    }
+    img{
+        width: 320px;
+        height: auto;
+    }
+    .textspace{
+        font-family:"Roboto Slab";
+        color:#000000;
+        font-size: 9px;
+        line-height:20px;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px;
+        padding: 0px 10px 10px;
+        font-weight:100;
+        text-transform:none;
+    }
+    .text{
+        font-family:"Roboto Slab";
+        color:#414141;
+        font-size: 16px;
+        line-height:20px;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px;
+        padding-top: 20px;
+        font-weight:400;
+        text-transform:none;
+        
+    }
+/*overview ends here*/
+
+
+
+/*snapshot starts here*/
+            
+#snapshot {
+    width: 320px;
+    float: left;
+    height: 200px;
+    overflow: scroll;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.snaphead{
+    color:#000000;
+    font-size: 14px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding: 0px 16px;
+    font-weight:400;
+    text-transform:none;
+}
+.snapheader{
+    font-size: 15px;
+    color: rgb(17, 75, 139);
+    display: inline-block;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+.snaps{
+    color:#000000;
+    font-size: 14px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding: 0px;
+    font-weight:400;
+    text-transform:none;
+}
+.mainsnap{
+    color:#000000;
+    font-size: 14px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding: 0px 16px;
+    font-weight:400;
+    text-transform:none;
+}
+.snaptitle{
+    font-size: 15px;
+    color: rgb(43, 43, 43);
+    display: block;
+    line-height: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    margin-top: 14px;
+}
+.snapsupertitle{
+    font-size: 15px;
+    line-height: 21px;
+    white-space: normal;
+    color: rgb(90, 90, 90);
+    font-weight: 500;
+    margin:0px;
+}
+.snapsubtitle{
+    margin-top:8px;
+    padding-left: 16px;
+    color: rgb(49, 112, 196);
+    list-style-type: disc;
+}
+
+.snaplist {
+    color:rgb(90, 90, 90);
+    font-size: 15px;
+    line-height:21px;
+    vertical-align:top;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding-bottom: 8px;
+    font-weight:400;
+    text-align: left;
+    text-transform:none;
+}
+/*snapshot ends here*/
+
+
+/*!valueset starts here*/
+
+#bottomrow {
+    width: auto;
+    display: flex;
+    margin-right: 0px;
+    
+}
+.valuesetsection{
+    width: auto;
+    background-color: white;
+    margin-bottom:  30px;
+    
+}
+#valuesets {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#valuesetcontainerout{
+    font-size:12px;
+    color:#777777;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px 10px;
+    font-weight: 400;
+    text-transform:none;
+}
+#valuesetcontainerin{
+    font-size:12px;
+    color:#000000;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:10px 0px;
+    font-weight: 400;
+    text-transform:none;
+}
+.valuesethead{
+    font-size:12px;
+    color:#000000;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:16px 16px 0px;
+    font-weight: 400;
+    text-transform:none;
+}
+
+.valuesetheader{
+    color:#579613;
+    font-size: 12px;
+    line-height:18px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    font-weight:400;
+    text-transform:uppercase;
+}
+.allvaluesets{
+    display: grid;
+    grid-template-columns: auto;
+}
+.mainvalueset{
+    color:#000000;
+    font-size: 12px;
+    line-height:10x;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px 0px 5px;
+    padding:16px 16px 0px;
+    font-weight:400;
+    text-transform:none;
+}
+.valueseticon{
+    color:#000000;
+    font-size: 12px;
+    line-height:20x;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    font-weight:400;
+    text-transform:none;
+}
+
+.mainvalueset img{
+    color: rgb(173, 173, 173);
+    background: none;
+    user-select: none;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    border-radius: 0px;
+    width: auto;
+    margin-right: 0px;
+    border: none;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    max-height: 50px;
+    line-height: 42px;
+    font-weight: 300;
+    padding: 12px 0px 14px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}            
+
+.valuesetbody{
+    color:#000000;
+    font-size:12px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    font-weight:400;
+    text-transform:none;
+    
+}
+.valuesettitle{
+
+    font-size: 12px;
+    color: rgb(43, 43, 43);
+    display: block;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    font-weight: 500;
+} 
+.valuesetsupertitle{
+    color:#5a5a5a;
+    font-size:13px;
+    line-height:21px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    font-weight:400;
+    text-transform:none;
+}
+/*value ends here*/
+
+
+
+/*quote stars here*/
+
+#quotes{
+    margin: 10px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    max-width: 320px;  
+}
+
+#quotehead{
+    font-size:10px;
+    color:#000000;
+    line-height:10px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:10px;
+    padding:16px 16px 0px;
+    font-weight:400;
+}
+.quoteheader{
+    color:#579613;
+    font-size: 13px;
+    line-height:17px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:20px;
+    font-weight:400;
+    text-transform:uppercase;
+}
+.quotebody{
+
+    font-size: 10px;
+    line-height:1px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:10px 0px 16px;
+    padding:0px 15px 0px;
+    font-weight:400;
+    text-transform:none;
+}
+
+blockquote {
+    color: #5a5a5a;
+    position: relative;
+    font-size: 15px;
+    line-height: 27px;
+    font-style: italic;
+    padding: 1px;
+    margin: 0px;
+}
+blockquote:before {
+    font-family: "Roboto";
+    content: " \201C ";
+    font-size: 40px;
+    font-weight: 400;
+    position: absolute;
+    left: -24px;
+    top: 4px;
+    color: #5a5a5a;
+}
+.quotefoot{
+    font-size: 14px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    font-weight:400;
+    text-transform:none;
+}
+.quotefooter{
+    color:#8c8c8c;
+    font-size: 14px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px 0px 6px;
+    padding:0px 0px 0px 4px;
+    font-weight:400;
+    text-transform:none;
+}
+/*quote ends here*/
+
+/*wizzlet starts here*/
+
+#wizzlets {
+    width: 320px;
+    height: 275px;
+    background-color:white;
+    overflow: none;
+    float: right;
+    margin-left: 0px;
+    float: left; 
+    display: grid; 
+    grid-template-columns: auto;
+}
+
+.wizzlethead{
+    line-height:20px;
+    margin:0px;
+    padding:5px 16px 0px;
+    
+}
+.wizzletheader{
+    font-size:13px;
+    color:#579613;
+    line-height:32px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    
+}
+.wizzletbody{
+    line-height:16px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px 0px 10px;
+    padding:0px 15px 0px;
+}
+.number{
+    color:#adadad;
+    font-size:38px;
+    line-height:35px;
+    vertical-align:baseline;
+    letter-spacing:0.5px;
+    word-spacing:0px;
+    margin:0px;
+    padding:8px 0px 10px;
+    font-weight:300;
+    text-transform:uppercase;
+}   
+.wizzlettitle{
+    font-size: 14px; 
+    color: rgb(43, 43, 43); 
+    display: block; 
+    line-height: 15px; 
+    text-transform: uppercase; 
+    margin-bottom: 4px;
+    font-weight: 500;
+} 
+.wizzletsupertitle{
+    color:#5a5a5a;
+    font-size:14px;
+    line-height:21px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    font-weight:400;
+    text-transform:none;
+}
+.main{
+    line-height:15px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+
+}
+#submain{
+    width: 320px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin-bottom: 15px;
+    padding:0px 0px 0px;
+}
+
+
+
+/*wizzlet ends here*/       
+
+
+
+}
+
             
