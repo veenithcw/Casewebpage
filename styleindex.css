@@ -299,9 +299,9 @@
             }
             .textspace{
                 color:#000000;
-                font-size: 14px;
-                line-height:20px;
-                vertical-align:baseline;
+                font-size: 19.012px;
+                line-height:2.143rem;
+                vertical-align: top;
                 letter-spacing:normal;
                 word-spacing:0px;
                 margin:0px;
@@ -312,16 +312,15 @@
             .text{
                 font-family:"Roboto Slab";
                 color:#414141;
-                font-size: 19.012px;
-                line-height:30px;
+                font-size: 1.358rem;
+                line-height:2.143rem;
                 vertical-align:baseline;
                 letter-spacing:normal;
-                word-spacing:0px;
-                margin:0px;
-                padding-top: 20px;
+                padding-top: 0px;
                 font-weight:300;
                 text-transform:none;
             }
+            
 /*overview ends here*/
 
 
@@ -332,7 +331,13 @@
                 float: left;
                 height: 238px;
                 overflow:scroll;
+                overflow-x: hidden;
                 margin-left: 10px;
+                -ms-overflow-style: none;
+                
+            }
+            #snapshot::-webkit-scrollbar {
+                display: none;
             }
             .snaphead{
                 color:#000000;
@@ -597,20 +602,21 @@
             }
             .quoteheader{
                 color:#579613;
+                max-width: 721px;
                 font-size: 14px;
                 line-height:18px;
                 vertical-align:baseline;
                 letter-spacing:normal;
                 word-spacing:0px;
                 margin:0px;
-                padding:23px;
+                padding: 16px 16px 0px;
                 font-weight:400;
                 text-transform:uppercase;
             }
             .quotebody{
             
-                font-size: 14px;
-                line-height:20px;
+                font-size: 17px;
+                line-height:21px;
                 vertical-align:baseline;
                 letter-spacing:normal;
                 word-spacing:0px;
@@ -626,8 +632,8 @@
                 font-size: 17px;
                 line-height: 27px;
                 font-style: italic;
-                padding: 1px;
                 margin: 0px;
+                padding: 1px 0px 0px 17px;
             }
             blockquote:before {
                 font-family: "Roboto";
@@ -635,17 +641,19 @@
                 font-size: 46px;
                 font-weight: 400;
                 position: absolute;
-                left: -24px;
-                top: 4px;
+                left: -10px;
+                top: 14px;
                 color: #5a5a5a;
+                
             }
             .quotefoot{
                 font-size: 14px;
                 line-height:20px;
                 vertical-align:baseline;
                 letter-spacing:normal;
+                display: inline-block;
                 word-spacing:0px;
-                margin:0px;
+                margin-left:12px;
                 padding:0px;
                 font-weight:400;
                 text-transform:none;
@@ -669,7 +677,7 @@
 /*wizzlet starts here*/
 
             #wizzlets {
-                width: 340px;
+                width: 353px;
                 height: 475px;
                 background-color:white;
                 overflow: scroll;
@@ -678,7 +686,14 @@
                 float: left; 
                 display: grid; 
                 grid-template-columns: auto;
+                padding: 10px 10px 10px 0px;
+                margin-bottom: 20px;
+                -ms-overflow-style: none;
             }
+                
+            #wizzlets::-webkit-scrollbar {
+            display: none;
+        }
 
             .wizzlethead{
                 line-height:20px;
@@ -691,7 +706,7 @@
                 line-height:32px;
                 vertical-align:baseline;
                 letter-spacing:normal;
-                word-spacing:0px;
+                word-spacing:0px;   
                 margin:0px;
                 padding:0px;
                 text-transform:uppercase;
@@ -705,16 +720,28 @@
                 padding:16px 16px 0px;
             }
             .number{
-                color:#adadad;
+                color: rgb(173, 173, 173);
                 font-size:48px;
+                font-family: 'Roboto slab', sans-serif;
                 line-height:42px;
-                vertical-align:baseline;
+                vertical-align: top;
                 letter-spacing:0.5px;
                 word-spacing:0px;
                 margin:0px;
                 padding:12px 0px 14px;
-                font-weight:300;
                 text-transform:uppercase;
+                display: block;
+                font-weight: 300;
+                background: none;
+                user-select: none;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0px;
+                height: auto;
+                width: auto;
+                border: none;
+                max-height: 78px;
+    
             }   
             .wizzlettitle{
                 font-size: 14px; 
@@ -743,7 +770,7 @@
                 letter-spacing:normal;
                 word-spacing:0px;
                 margin:0px;
-                padding:0px;
+                padding-bottom: 15px;
             
             }
             #submain{
@@ -753,7 +780,7 @@
                 letter-spacing:normal;
                 word-spacing:0px;
                 margin:0px;
-                padding:0px 0px 0px;
+                padding:0px 0px 15px;
             }
 
            
@@ -779,40 +806,81 @@
 }
 
 @media screen and (max-width: 768px) {
-                
-    #toprow {
-        
-        flex-direction: column;
-        height: auto;
-    }
-    #overview  {
-        width:auto;
-        height: auto;
-    }
-    #snapshot {
-        width: auto;
-        height: auto;
-        float:none;
-    }
-    #bottomrow {
-        flex-direction: column;
-        height: auto;
+
+    body{
+        margin: 0;
+        padding: 0;
+        background: #EBEEF4;
+        font-family: 'Roboto slab', sans-serif;
     }
     
-    #highlights {
-        width: auto;
+    #land{
+        max-width: 770px;
+        margin: 0 auto;
+        display: block;
+        grid-template-columns: auto;
+        background-color: #EBEEF4;
+    }
+    
+
+    #header {
         
+        color: rgba(0, 0, 0, 0.87);
+        background-color: rgb(255, 255, 255);
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        transition-property: all;
+        transition-duration: 450ms;
+        transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+        transition-delay: 0ms;
+        box-sizing: border-box;
+        font-family: 'Roboto slab', sans-serif;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        box-shadow: rgba(182, 182, 182, 0.5) 0px 0px 11px 0px;
+        border-radius: 0px;
+        position: fixed;
+        z-index: 1100;
+        width: 780px;
+        display: flex;
+        padding: 0px 20px;
+        max-height: 60px;
+        border: none;
+        top: 0px;
+        margin-bottom: 10px;
+      
     }
-    #wizzlets {
-        width: auto;
-        float:none;
-        display: grid;
-        grid-template-columns: 250px 250px;
+    .name{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 0px;
+        padding-top: 0px;
+        letter-spacing: 0px;
+        font-size: 22px;
+        font-weight: 400;
+        color: rgb(30, 54, 87);
+        height: 55px;
+        line-height: 55px;
+        flex: initial;
+        font-family: Georgia;
+        padding-right: 15px;
+        cursor: pointer;
     }
-    #valuesets {
-        display: grid;
-        grid-template-columns: auto auto;
+    .logo{
+        display: flex;
+        max-width: 114px;
+        max-height: 50px;
+        cursor: pointer;
+        padding: 0px;
+        transform: translateX(470px) translateY(2px);
+
     }
+
+    .user{
+        height: 38px;
+        cursor: pointer;
+        padding-right:10px;
+
+    }
+                
     
     #pagecontent{
         max-width:768px;
@@ -820,30 +888,697 @@
         display: flex;
         flex-direction: column;
     }
-    #nav{
-        width: 100%;
-        position: fixed;   
-        margin: 0 auto;
+    
+    
+    .nav{
+        width: auto;
+        height: auto;
+        margin: 10px 10px 10px 10px; 
+        position: relative;
+        top:40px;
+        padding-top: 15px;
     }
-    #nav a {
+    .namecard{
+        width: auto;
+        height: 60px;
+        background-color:#D1DDEC;
+        margin-bottom: 10px;
+        padding:16px;
+        text-align: left;
         display: flex;
-        flex-direction: row;
-        text-decoration: none;
-        font-size: 18px;
-        color: #58508d;
-        padding: 0 20px 0 20px;
-        margin: 0 5%;
-        float:left;
     }
-    #content{
-        width: 88%;
-        float: none;
-        margin: auto;
-        margin-top: 4%;
+    .namecardtitlegroup{
+        color:#000000;
+        font-size: 20px;
+        line-height:20px;
+        text-align: none;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px 0px 8px;
+        padding:0px;
+        font-weight:400;
+        text-transform:none;
+    }
+    .namcardtitle{
+        width: auto;
+        font-size: 13px;
+        color: #3170c4;
+        display: block;
+        line-height: 19px;
+        padding-bottom: 4px;
+        font-weight:400;
+        text-transform: uppercase;
+    }
+    .namecardsupertitle{
+        width: 768px;
+        font-size: 14px;
+        line-height: 15px;
+        white-space: normal;
+        font-weight: 500;
+        color: rgb(65, 65, 65);
+        padding-bottom: 10px;
+    }
+    .namecardsubtitle{
+        color: rgb(140, 140, 140);
+        font-size: 13px;
+        line-height: 19px;
+        padding-top: 6px;
+        font-weight:400;
+        vertical-align: bottom;
         
     }
-    .bg3{
-        background-color: #a6e3e9;
+    .namecardimg{
+        overflow: hidden;
+        background-size: 100%;
+        position: relative;
+        top:0px;
+        left: 360px;
+        height: auto;
+    }
+
+    .navover{
+        width: auto;
+        height: 30px;
+        background-color:#b9ceeb;
+        padding-top: 8px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        padding-right: 10px;
+        text-transform: uppercase;
+        padding-bottom: 2px;
+        
+    }
+    .navover a {
+        text-decoration: none;
+        color: #3170c4;
+        float: none;
+        padding-top: 0px;
+    }
+    .navhigh{
+        width: auto;
+        height: 30px;
+        background-color: #b9ceeb;
+        padding-top: 8px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        padding-right: 10px;
+        text-transform: uppercase;      
+        padding-bottom: 2px;
+        
+  
+    }
+    .navhigh a {
+        text-decoration: none;
+        color: #3170c4;
+        float: none;
+    }
+    .navover a:hover {
+        color:#ffa600;
+    }
+    .navhigh a:hover {
+        color:#ffa600;
+    }
+    
+    
+    
+
+
+/*overview starts here*/                       
+            
+    #content{
+        margin-top:0.24%;
+        margin-left:10px;
+        width: auto;
+        height: auto;
+        float: left;
+    }
+    #toprow {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-top: 52px;
+    }
+    #overview {
+        width:398px;
+        height: auto;
+        background-color:white;
+        display: grid;
+        grid-template-columns: auto;
+        margin-right: 10px;
+    }
+    .ovcont1 {
+        color:#000000;
+        font-size: 15px;
+        line-height:20px;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px 0px 0px;
+        padding:0px;
+        font-weight:400;
+        text-transform:none;
+    }
+    .ovcont2{
+        color:#000000;
+        font-size: 15px;
+        line-height:20px;
+        vertical-align:top;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0xpx;
+        padding:30px 0px 0px;
+        font-weight:400;
+        text-transform:none;
+    }
+    .ovtitles{
+        color:#000000;
+        font-size: 15px;
+        line-height:10px;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px 0px 8px;
+        padding:0px 10px;
+        font-weight:400;
+        text-transform:none;
+    }
+    .ovtitle{
+        font-size: 15px;
+        color: rgb(86, 149, 230);
+        display: block;
+        line-height: 15px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    .ovsupertitle{
+        width: auto;
+        font-size: 28px;
+        line-height: 36px;
+        white-space: normal;
+        font-weight: 500;
+        color: rgb(43, 43, 43);
+    }
+    .ovsubtitle{
+        color:#8c8c8c;
+        font-size: 14px;
+        line-height:20px;
+        vertical-align:top;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px;
+        margin-bottom: 8px;
+        padding: 0px 10px 10px 10px;
+        font-weight:400;
+        text-transform:none;
+        color: rgb(140, 140, 140);
+        display: inline-block;
+    }
+    .image{
+        max-width: auto;
+        height: auto;
+       
+            
+    }
+    img{
+        max-width: 398px;
+        height: auto;
+        margin: opx;
+    }
+    .textspace{
+        font-family:"Roboto Slab";
+        color:#000000;
+        font-size: 19px;
+        line-height:2.143rem;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px;
+        padding: 0px 10px 10px;
+        font-weight:100;
+        text-transform:none;
+    }
+    .text{
+        font-family:"Roboto Slab";
+        color:#414141;
+        font-size: 1.358rem;
+        line-height:2.143rem;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px;
+        padding-top: 20px;
+        font-weight:300;
+        text-transform:none;
+        
+    }
+/*overview ends here*/
+
+
+
+/*snapshot starts here*/
+            
+#snapshot {
+    width: 343px;
+    float: left;
+    height: 200px;
+    overflow: scroll;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 0;
+    line-height: 20px;
+}
+.snaphead{
+    color:#000000;
+    font-size: 14px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding: 0px 16px;
+    font-weight:400;
+    text-transform:none;
+}
+.snapheader{
+    font-size: 15px;
+    color: rgb(17, 75, 139);
+    display: inline-block;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+.snaps{
+    color:#000000;
+    font-size: 14px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding: 0px;
+    font-weight:400;
+    text-transform:none;
+}
+.mainsnap{
+    color:#000000;
+    font-size: 14px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding: 0px 16px;
+    font-weight:400;
+    text-transform:none;
+}
+.snaptitle{
+    font-size: 15px;
+    color: rgb(43, 43, 43);
+    display: block;
+    line-height: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    margin-top: 14px;
+}
+.snapsupertitle{
+    font-size: 15px;
+    line-height: 21px;
+    white-space: normal;
+    color: rgb(90, 90, 90);
+    font-weight: 500;
+    margin:0px;
+}
+.snapsubtitle{
+    margin-top:8px;
+    padding-left: 16px;
+    color: rgb(49, 112, 196);
+    list-style-type: disc;
+}
+
+.snaplist {
+    color:rgb(90, 90, 90);
+    font-size: 15px;
+    line-height:21px;
+    vertical-align:top;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding-bottom: 8px;
+    font-weight:400;
+    text-align: left;
+    text-transform:none;
+}
+/*snapshot ends here*/
+
+
+/*!valueset starts here*/
+
+#bottomrow {
+    width: auto;
+    display: flex;
+    margin-right: 0px;
+    
+}
+.valuesetsection{
+    width: 414px;
+    background-color: white;
+    margin-bottom:  30px;
+    margin-right: 0px;
+    
+}
+#valuesets {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#valuesetcontainerout{
+    font-size:12px;
+    color:#777777;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px 10px;
+    font-weight: 400;
+    text-transform:none;
+}
+#valuesetcontainerin{
+    font-size:12px;
+    color:#000000;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:10px 0px;
+    font-weight: 400;
+    text-transform:none;
+}
+.valuesethead{
+    font-size:12px;
+    color:#000000;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:16px 16px 0px;
+    font-weight: 400;
+    text-transform:none;
+}
+
+.valuesetheader{
+    color:#579613;
+    font-size: 14px;
+    line-height:18px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    font-weight:400;
+    text-transform:uppercase;
+}
+.allvaluesets{
+    display: grid;
+    grid-template-columns: auto;
+}
+.mainvalueset{
+    color:#000000;
+    font-size: 14px;
+    line-height:10x;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px 0px 5px;
+    padding:16px 16px 0px;
+    font-weight:400;
+    text-transform:none;
+}
+.valueseticon{
+    color:#000000;
+    font-size: 12px;
+    line-height:20x;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    font-weight:400;
+    text-transform:none;
+}
+
+.mainvalueset img{
+    color: rgb(173, 173, 173);
+    background: none;
+    user-select: none;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    border-radius: 0px;
+    width: auto;
+    margin-right: 0px;
+    border: none;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    max-height: 50px;
+    line-height: 42px;
+    font-weight: 300;
+    padding: 12px 0px 14px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}            
+
+.valuesetbody{
+    color:#000000;
+    font-size:12px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    font-weight:400;
+    text-transform:none;
+    
+}
+.valuesettitle{
+
+    font-size: 14px;
+    color: #2B2B2B;
+    display: block;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    font-weight: 500;
+} 
+.valuesetsupertitle{
+    color:#5a5a5a;
+    font-size:14px;
+    line-height:21px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    font-weight:400;
+    text-transform:none;
+}
+/*value ends here*/
+
+
+
+/*quote stars here*/
+
+#quotes{
+    margin: 10px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    max-width: auto;  
+}
+
+#quotehead{
+    font-size:10px;
+    color:#000000;
+    line-height:10px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:10px;
+    padding:16px 16px 0px;
+    font-weight:400;
+}
+.quoteheader{
+    color:#579613;
+    font-size: 14px;
+    line-height:18px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:20px;
+    font-weight:400;
+    text-transform:uppercase;
+}
+.quotebody{
+
+    font-size: 10px;
+    line-height:10px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:10px 0px 16px;
+    padding:0px 15px 0px;
+    font-weight:400;
+    text-transform:none;
+}
+
+blockquote {
+    color: #5a5a5a;
+    position: relative;
+    font-size: 17px;
+    line-height: 27px;
+    font-style: italic;
+    padding: 1px;
+    margin: 0px;
+}
+blockquote:before {
+    font-family: "Roboto";
+    content: " \201C ";
+    font-size: 44px;
+    font-weight: 400;
+    position: absolute;
+    left: -24px;
+    top: 19px;
+    color: #5a5a5a;
+}
+.quotefoot{
+    font-size: 14px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    font-weight:400;
+    text-transform:none;
+}
+.quotefooter{
+    color:#8c8c8c;
+    font-size: 14px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px 0px 6px;
+    padding:0px 0px 0px 4px;
+    font-weight:400;
+    text-transform:none;
+}
+/*quote ends here*/
+
+/*wizzlet starts here*/
+
+#wizzlets {
+    width: 343px;
+    height: 275px;
+    background-color:white;
+    overflow: none;
+    margin-right: 10px;
+    float: left; 
+    display: grid; 
+    grid-template-columns: auto;
+}
+
+.wizzlethead{
+    line-height:20px;
+    margin:0px;
+    padding:16px 16px 0px;
+    
+}
+.wizzletheader{
+    font-size:13px;
+    color:#579613;
+    line-height:32px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding: 16px 0px 0px;
+    text-transform:uppercase;
+    
+}
+.wizzletbody{
+    line-height:16px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px 0px 10px;
+    padding:0px 16px 0px;
+}
+.number{
+    color:#adadad;
+    font-size:48px;
+    line-height:35px;
+    vertical-align:baseline;
+    letter-spacing:0.5px;
+    word-spacing:0px;
+    margin:0px;
+    padding:12px 0px 14px;
+    font-weight:300;
+    text-transform:uppercase;
+}   
+.wizzlettitle{
+    font-size: 13px; 
+    color: rgb(43, 43, 43); 
+    display: block; 
+    line-height: 21px; 
+    text-transform: uppercase; 
+    margin-bottom: 4px;
+    font-weight: 700;
+} 
+.wizzletsupertitle{
+    color:#5a5a5a;
+    font-size:15px;
+    line-height:21px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+    font-weight:400;
+    text-transform:none;
+}
+.main{
+    line-height:15px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin:0px;
+    padding:0px;
+
+}
+#submain{
+    width: 320px;
+    line-height:20px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    margin-bottom: 15px;
+    padding:0px 0px 0px;
+}
+
+
+
+/*wizzlet ends here*/       
+
 }
 @media screen and (max-width: 420px) {
     #valuesets {
@@ -889,9 +1624,11 @@
 
 
 @media screen and (max-width: 420px) {
+   
+   
     #valuesets {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-rows: auto auto;
     }
     #wizzlets{
         display: grid;
@@ -1261,11 +1998,12 @@
 /*snapshot ends here*/
 
 
+
 /*!valueset starts here*/
 
 #bottomrow {
     width: auto;
-    display: flex;
+    display: grid;
     margin-right: 0px;
     
 }
@@ -1424,7 +2162,7 @@
     margin: 10px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
-    max-width: 320px;  
+    max-width: auto;  
 }
 
 #quotehead{
@@ -1598,6 +2336,11 @@ blockquote:before {
     margin-bottom: 15px;
     padding:0px 0px 0px;
 }
+
+
+
+/*wizzlet ends here*/       
+
 
 
 
