@@ -10,7 +10,7 @@
             
             #land{
                 max-width:auto;
-                margin: 0 auto;
+                margin: 0;
                 display: block;
                 grid-template-columns: auto;
                 background-color: #EBEEF4;
@@ -79,7 +79,8 @@
             #pagecontent{
     
                 width:auto;
-                margin: 0 auto;
+                padding-left: 0px;
+                margin: 10px;
                 margin-top: 0px;
                 display: flex;
                 flex-direction: row;
@@ -91,7 +92,8 @@
             .nav{
                 width: 330px;
                 height: auto;
-                margin-top: 0px !important; 
+                margin-top: 0px;
+                padding-left: 20px; 
                 margin-left: 10px;
                 position:fixed;
                 top:65px;
@@ -810,14 +812,13 @@
 @media screen and (max-width: 768px) {
 
     body{
-        margin: 0;
-        padding: 0;
+        
         background: #EBEEF4;
         font-family: 'Roboto slab', sans-serif;
     }
     
     #land{
-        max-width: 770px;
+        max-width: 768px;
         margin: 0 auto;
         display: block;
         grid-template-columns: auto;
@@ -841,7 +842,7 @@
         border-radius: 0px;
         position: fixed;
         z-index: 1100;
-        width: 780px;
+        width: 768px;
         display: flex;
         padding: 0px 20px;
         max-height: 60px;
@@ -886,7 +887,7 @@
     
     #pagecontent{
         max-width:768px;
-        margin: 0 auto;
+        margin: 0px;
         display: flex;
         flex-direction: column;
     }
@@ -895,10 +896,10 @@
     .nav{
         width: auto;
         height: auto;
-        margin: 10px 10px 10px 10px; 
+        margin: 0px 0px 10px; 
         position: relative;
         top:40px;
-        padding-top: 15px;
+        padding: 25px 10px 0px;
     }
     .namecard{
         width: auto;
@@ -928,26 +929,25 @@
         color: #3170c4;
         display: block;
         line-height: 19px;
-        padding-bottom: 4px;
         font-weight:400;
         text-transform: uppercase;
+        margin-bottom: 2px;
     }
     .namecardsupertitle{
-        width: 768px;
         font-size: 14px;
-        line-height: 15px;
-        white-space: normal;
-        font-weight: 500;
+        line-height: 20px;
+        font-weight: 500px;
         color: rgb(65, 65, 65);
-        padding-bottom: 10px;
     }
+
     .namecardsubtitle{
         color: rgb(140, 140, 140);
         font-size: 13px;
+        vertical-align: bottom;
+        display: inline-block;
         line-height: 19px;
         padding-top: 6px;
-        font-weight:400;
-        vertical-align: bottom;
+
         
     }
     .namecardimg{
@@ -963,12 +963,13 @@
         width: auto;
         height: 30px;
         background-color:#b9ceeb;
-        padding-top: 8px;
+        padding-top: 10px;
         margin-bottom: 10px;
+        margin-top: 10px;
         text-decoration: none;
-        padding-right: 10px;
+        padding-left: 10px;
         text-transform: uppercase;
-        padding-bottom: 2px;
+        padding-bottom: 0px;
         
     }
     .navover a {
@@ -981,10 +982,11 @@
         width: auto;
         height: 30px;
         background-color: #b9ceeb;
-        padding-top: 8px;
+        padding-top: 10px;
         margin-bottom: 10px;
         text-decoration: none;
         padding-right: 10px;
+        padding-left: 10px;
         text-transform: uppercase;      
         padding-bottom: 2px;
         
@@ -1063,8 +1065,8 @@
         vertical-align:baseline;
         letter-spacing:normal;
         word-spacing:0px;
-        margin:0px 0px 8px;
-        padding:0px 10px;
+        margin-bottom: 10px;
+        padding: 0px 20px;
         font-weight:400;
         text-transform:none;
     }
@@ -1073,7 +1075,6 @@
         color: rgb(86, 149, 230);
         display: block;
         line-height: 15px;
-        padding-bottom: 20px;
         text-transform: uppercase;
     }
     .ovsupertitle{
@@ -1083,6 +1084,7 @@
         white-space: normal;
         font-weight: 500;
         color: rgb(43, 43, 43);
+        
     }
     .ovsubtitle{
         color:#8c8c8c;
@@ -1093,7 +1095,7 @@
         word-spacing:0px;
         margin:0px;
         margin-bottom: 8px;
-        padding: 0px 10px 10px 10px;
+        padding: 0px 10px 10px 20px;
         font-weight:400;
         text-transform:none;
         color: rgb(140, 140, 140);
@@ -1126,13 +1128,13 @@
     .text{
         font-family:"Roboto Slab";
         color:#414141;
-        font-size: 1.358rem;
-        line-height:2.143rem;
+        font-size: 1.35rem;
+        line-height:2.1rem;
         vertical-align:baseline;
         letter-spacing:normal;
         word-spacing:0px;
         margin:0px;
-        padding-top: 20px;
+        padding: 20px 10px;
         font-weight:300;
         text-transform:none;
         
@@ -1589,11 +1591,12 @@ blockquote:before {
         padding: 0;
         background: #EBEEF4;
         font-family: 'Roboto slab', sans-serif;
+        font-family: 'Roboto';
     }
     
     #land{
         max-width: 320px;
-        margin: 0 auto;
+        margin: auto;
         display: block;
         grid-template-columns: auto;
         background-color: #EBEEF4;
@@ -1658,26 +1661,26 @@ blockquote:before {
 
     }
     #pagecontent{
-        max-width: auto;
+        max-width: 100%;
         margin: auto;
         display: flex;
         flex-direction: column;
     }
 
     
-    .nav{
-        width: auto;
-        height: auto;
-        position: relative;
-        top:40px;
-        
+    .nav{width: auto;
+    height: auto;
+    margin: 0px 0px 10px;
+    position: relative;
+    top: 40px;
+    padding: 25px 0px 0px;
+    
     }
     .namecard{
         width: auto;
-        height: 57px;
+        height: 80px;
         background-color:#D1DDEC;
         margin-bottom: 10px;
-        margin-top: 10px;
         text-align: left;
         display: flex;
     }
@@ -1695,23 +1698,25 @@ blockquote:before {
         text-transform:none;
     }
     .namcardtitle{
-        width: auto;
-        font-size: 10px;
-        color: #3170c4;
+        font-size: 13px;
+        color: rgb(49, 112, 196);
         display: block;
         line-height: 19px;
-        padding-bottom: 0px;
-        font-weight:400;
+        margin-bottom: 2px;
         text-transform: uppercase;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     .namecardsupertitle{
-        width: auto;
-        font-size: 11px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 20px;
         white-space: normal;
+        display: block;
         font-weight: 500;
         color: rgb(65, 65, 65);
-        padding-bottom: 10px;
+        width: 75%;
+        padding-bottom: ;
     }
     .namecardsubtitle{
         color: rgb(140, 140, 140);
@@ -1721,7 +1726,7 @@ blockquote:before {
         font-weight:400;
         vertical-align: bottom;
         overflow: hidden;
-        margin-bottom: 10px;        
+        padding-bottom: 100px;        
     }
     .namecardimg{
         overflow: hidden;
@@ -1729,8 +1734,8 @@ blockquote:before {
         position: relative;
         top:0px;
         right: 10px;
-        left: 0px;
-        max-width: 320px;
+        left: 1px;
+        max-width: 100%;
     }
 
     .navover{
@@ -1781,9 +1786,9 @@ blockquote:before {
     
         width: auto;
         margin: 0 auto;
-        margin-top: 0px;
         display: flex;
         flex-direction: row;
+        padding: 10px;
     }
 
 
@@ -1802,15 +1807,17 @@ blockquote:before {
         flex-direction: column;
         height: auto;
         margin-bottom: 10px;
-        margin-right: 10px;
-        margin-top: 52px;
+        margin-right: 50px;
+        margin-top: 42px;
     }
     #overview {
-        width:320px;
+        width:300px;
         height: auto;
         background-color:white;
         display: grid;
         grid-template-columns: auto;
+        margin: 0px;
+        
     }
     .ovcont1 {
         color:#000000;
@@ -1820,7 +1827,6 @@ blockquote:before {
         letter-spacing:normal;
         word-spacing:0px;
         margin:0px 0px 10px;
-        padding:0px;
         font-weight:400;
         text-transform:none;
     }
@@ -1832,7 +1838,7 @@ blockquote:before {
         letter-spacing:normal;
         word-spacing:0px;
         margin:0px;
-        padding:30px 0px 0px;
+        padding:10px 0px 0px;
         font-weight:400;
         text-transform:none;
     }
@@ -1849,21 +1855,20 @@ blockquote:before {
         text-transform:none;
     }
     .ovtitle{
-        font-size: 14px;
+        font-size: 15px;
         color: rgb(86, 149, 230);
         display: block;
         line-height: 0px;
-        padding-bottom: 10px;
+        padding:20px 0px 20px;
         text-transform: uppercase;
     }
     .ovsupertitle{
         width: 320px;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 24px;
+        line-height: 36px;
         white-space: normal;
         font-weight: 500;
         color: rgb(43, 43, 43);
-        line-break: 320px;
     }
     .ovsubtitle{
         color:#8c8c8c;
@@ -1871,42 +1876,41 @@ blockquote:before {
         line-height:20px;
         vertical-align:top;
         letter-spacing:normal;
-        word-spacing:0px;
-        margin:0px;
         margin-bottom: 8px;
-        padding: 0px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
         font-weight:400;
         text-transform:none;
         color: rgb(140, 140, 140);
         display: inline-block;
     }
     .image{
-        max-width: 320px;
+        max-width: 300px;
         height: auto;
        
             
     }
     img{
-        width: 320px;
+        width: auto;
         height: auto;
+        margin-right: 10px;
     }
     .textspace{
         font-family:"Roboto Slab";
         color:#000000;
-        font-size: 9px;
+        font-size: 1.358rem;
         line-height:20px;
         vertical-align:baseline;
         letter-spacing:normal;
         word-spacing:0px;
         margin:0px;
-        padding: 0px 10px 10px;
+        padding: 0px 5px 10px;
         font-weight:100;
         text-transform:none;
     }
     .text{
         font-family:"Roboto Slab";
         color:#414141;
-        font-size: 16px;
+        font-size: 18px;
         line-height:20px;
         vertical-align:baseline;
         letter-spacing:normal;
@@ -1971,7 +1975,7 @@ blockquote:before {
     letter-spacing:normal;
     word-spacing:0px;
     margin:0px;
-    padding: 0px 16px;
+    padding: 0px 10px;
     font-weight:400;
     text-transform:none;
 }
@@ -2074,7 +2078,7 @@ blockquote:before {
 
 .valuesetheader{
     color:#579613;
-    font-size: 12px;
+    font-size: 14px;
     line-height:18px;
     vertical-align:baseline;
     letter-spacing:normal;
@@ -2150,7 +2154,7 @@ blockquote:before {
 }
 .valuesettitle{
 
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(43, 43, 43);
     display: block;
     line-height: 21px;
@@ -2160,7 +2164,7 @@ blockquote:before {
 } 
 .valuesetsupertitle{
     color:#5a5a5a;
-    font-size:13px;
+    font-size:15px;
     line-height:21px;
     vertical-align:baseline;
     letter-spacing:normal;
@@ -2280,11 +2284,11 @@ blockquote:before {
 .wizzlethead{
     line-height:20px;
     margin:0px;
-    padding:5px 16px 0px;
+    padding:16px 16px 0px;
     
 }
 .wizzletheader{
-    font-size:13px;
+    font-size:14px;
     color:#579613;
     line-height:32px;
     vertical-align:baseline;
@@ -2300,18 +2304,18 @@ blockquote:before {
     vertical-align:baseline;
     letter-spacing:normal;
     word-spacing:0px;
-    margin:0px 0px 10px;
-    padding:0px 15px 0px;
+    margin:0px 0px 16px;
+    padding: 6px 16px 0px;
 }
 .number{
     color:#adadad;
-    font-size:38px;
+    font-size:48px;
     line-height:35px;
     vertical-align:baseline;
     letter-spacing:0.5px;
     word-spacing:0px;
     margin:0px;
-    padding:8px 0px 10px;
+    padding:12px 0px 14px;
     font-weight:300;
     text-transform:uppercase;
 }   
@@ -2326,7 +2330,7 @@ blockquote:before {
 } 
 .wizzletsupertitle{
     color:#5a5a5a;
-    font-size:14px;
+    font-size:15px;
     line-height:21px;
     vertical-align:baseline;
     letter-spacing:normal;
