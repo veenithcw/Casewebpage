@@ -59,7 +59,7 @@
             }
             .logo{
                 display: inline-block;
-                max-width: 114px;
+                max-width: auto;
                 max-height: 50px;
                 cursor: pointer;
                 padding: 0px;
@@ -70,8 +70,9 @@
             .user{
                 height: 38px;
                 cursor: pointer;
-                padding-right:10px;
-                transform: translateX(-70px) translateY(-43px);
+                position: absolute;
+                top: 7px;
+                right: 120px;
 
             }
             
@@ -90,7 +91,7 @@
 /*Nav part starts here*/                       
 
             .nav{
-                width: 330px;
+                width: 21%;
                 height: auto;
                 margin-top: 0px;
                 padding-left: 20px; 
@@ -100,7 +101,7 @@
             }
             .namecard{
                 width: auto;
-                height: 86px;
+                height: auto;
                 background-color:#D1DDEC;
                 margin-bottom: 10px;
                 padding:16px;
@@ -109,9 +110,8 @@
             }
             .namecardtitlegroup{
                 color:#000000;
-                font: size 14px;
+                font-size: 14px;
                 line-height:20px;
-                text-align: left;
                 vertical-align:baseline;
                 letter-spacing:normal;
                 word-spacing:0px;
@@ -119,6 +119,7 @@
                 padding:0px;
                 font-weight:400;
                 text-transform:none;
+                width:70%;
             }
             .namcardtitle{
                 width: 230px;
@@ -131,18 +132,19 @@
                 text-transform: uppercase;
             }
             .namecardsupertitle{
-                width: 152px;
+                width: 100%;
                 font-size: 14px;
                 line-height: 20px;
                 white-space: normal;
                 font-weight: 500;
                 color: rgb(65, 65, 65);
-                padding-bottom: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
             }
             .namecardsubtitle{
                 color: rgb(140, 140, 140);
                 font-size: 13px;
-                line-height: 19px;
+                line-height: 35px;
                 padding-top: 6px;
                 font-weight:400;
                 vertical-align: bottom;
@@ -151,10 +153,13 @@
             .namecardimg{
                 overflow: hidden;
                 background-size: 100%;
-                position: relative;
-                top:0px;
-                right:-10px;
+                position: absolute;
+                top:30px;
+                right:20px;
+                width: auto;
             }
+
+            
 
             .navover{
                 width: auto;
@@ -205,13 +210,12 @@
             #content{
                 margin-top:0.25%;
                 margin-left: 24%;
-                width: 78%;
+                width: auto;
                 height: auto;
-                float: right;
                 overflow:auto;
             }
             #toprow {
-                width: 1084px;
+                width: auto;
                 display: flex;
                 flex-direction: row;
                 height: auto;
@@ -220,7 +224,7 @@
                 margin-top: 62px;
             }
             #overview {
-                width:721px;
+                max-width: 61.2% ;
                 height: auto;
                 background-color:white;
                 display: grid;
@@ -228,7 +232,7 @@
             }
             .ovcont1 {
                 color:#000000;
-                font: size 14px;
+                font-size: 14px;
                 line-height:20px;
                 vertical-align:baseline;
                 letter-spacing:normal;
@@ -240,7 +244,7 @@
             }
             .ovcont2{
                 color:#000000;
-                font: size 14px;
+                font-size :14px;
                 line-height:20px;
                 vertical-align:top;
                 letter-spacing:normal;
@@ -252,7 +256,7 @@
             }
             .ovtitles{
                 color:#000000;
-                font: size 14px;
+                font-size: 14px;
                 line-height:20px;
                 vertical-align:baseline;
                 letter-spacing:normal;
@@ -279,7 +283,7 @@
             }
             .ovsubtitle{
                 color:#8c8c8c;
-                font: size 14px;
+                font-size: 14px;
                 line-height:20px;
                 vertical-align:top;
                 letter-spacing:normal;
@@ -294,10 +298,15 @@
                 display: inline-block;
             }
             .image{
+                max-width: auto;
+                height: auto;
+                                   
+            }
+
+            img{
                 max-width: 100%;
                 height: auto;
-               
-                    
+                margin: 0px;
             }
             .textspace{
                 color:#000000;
@@ -310,6 +319,7 @@
                 padding: 0px 20px 20px;
                 font-weight:400;
                 text-transform:none;
+                width: auto;
             }
             .text{
                 font-family:"Roboto Slab";
@@ -329,13 +339,13 @@
 /*snapshot starts here*/
             
             #snapshot {
-                width: 343px;
-                float: left;
+                width: 30%;
                 height: 238px;
                 overflow:scroll;
                 overflow-x: hidden;
                 margin-left: 10px;
                 -ms-overflow-style: none;
+                
                 
             }
             #snapshot::-webkit-scrollbar {
@@ -343,7 +353,7 @@
             }
             .snaphead{
                 color:#000000;
-                font: size 14px;
+                font-size :14px;
                 line-height:20px;
                 vertical-align:baseline;
                 letter-spacing:normal;
@@ -428,13 +438,14 @@
 /*!valueset starts here*/
 
             #bottomrow {
-                width: 100%;
-                display: flex;
-                margin-right: 10px;
+                width: auto;
+                display: grid;
+                grid-template-columns: auto auto;
+                margin-right: 30px;
                 
             }
             .valuesetsection{
-                width: 721px;
+                max-width: auto;
                 background-color: white;
                 margin-bottom:  30px;
                 
@@ -511,7 +522,7 @@
             .valueseticon{
                 color:#000000;
                 font-size: 14px;
-                line-height:20x;
+                line-height:20px;
                 vertical-align:baseline;
                 letter-spacing:normal;
                 word-spacing:0px;
@@ -679,15 +690,11 @@
 /*wizzlet starts here*/
 
             #wizzlets {
-                width: 353px;
+                width: auto;
                 height: 475px;
                 background-color:white;
                 overflow: scroll;
-                float: right;
                 margin-left: 10px;
-                float: left; 
-                display: grid; 
-                grid-template-columns: auto;
                 padding: 10px 10px 10px 0px;
                 margin-bottom: 20px;
                 -ms-overflow-style: none;
@@ -695,7 +702,26 @@
                 
             #wizzlets::-webkit-scrollbar {
             display: none;
-        }
+            }
+            .main{
+                line-height:20px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding-bottom: 15px;
+                width: auto;
+            
+            }
+            #submain{
+                width: 100%;
+                line-height:20px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:0px 0px 15px;
+            }
 
             .wizzlethead{
                 line-height:20px;
@@ -726,7 +752,6 @@
                 font-size:48px;
                 font-family: 'Roboto slab', sans-serif;
                 line-height:42px;
-                vertical-align: top;
                 letter-spacing:0.5px;
                 word-spacing:0px;
                 margin:0px;
@@ -766,24 +791,7 @@
                 font-weight:400;
                 text-transform:none;
             }
-            .main{
-                line-height:20px;
-                vertical-align:baseline;
-                letter-spacing:normal;
-                word-spacing:0px;
-                margin:0px;
-                padding-bottom: 15px;
             
-            }
-            #submain{
-                width: 343px;
-                line-height:20px;
-                vertical-align:baseline;
-                letter-spacing:normal;
-                word-spacing:0px;
-                margin:0px;
-                padding:0px 0px 15px;
-            }
 
            
 
@@ -809,7 +817,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     body{
         
@@ -818,8 +826,8 @@
     }
     
     #land{
-        max-width: 768px;
-        margin: 0 auto;
+        max-width: 100%;
+        margin: auto;
         display: block;
         grid-template-columns: auto;
         background-color: #EBEEF4;
@@ -830,19 +838,13 @@
         
         color: rgba(0, 0, 0, 0.87);
         background-color: rgb(255, 255, 255);
-        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-        transition-property: all;
-        transition-duration: 450ms;
-        transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-        transition-delay: 0ms;
-        box-sizing: border-box;
         font-family: 'Roboto slab', sans-serif;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         box-shadow: rgba(182, 182, 182, 0.5) 0px 0px 11px 0px;
         border-radius: 0px;
         position: fixed;
         z-index: 1100;
-        width: 768px;
+        width: 100%;
         display: flex;
         padding: 0px 20px;
         max-height: 60px;
@@ -886,7 +888,7 @@
                 
     
     #pagecontent{
-        max-width:768px;
+        max-width:100%;
         margin: 0px;
         display: flex;
         flex-direction: column;
@@ -952,11 +954,10 @@
     }
     .namecardimg{
         overflow: hidden;
-        background-size: 100%;
-        position: relative;
-        top:0px;
-        left: 360px;
-        height: auto;
+        background-size: auto;
+        position: absolute;
+        top: 40px;
+        right: 20px;
     }
 
     .navover{
@@ -1002,11 +1003,8 @@
     }
     .navhigh a:hover {
         color:#ffa600;
-    }
+    }  
     
-    
-    
-
 
 /*overview starts here*/                       
             
@@ -1053,7 +1051,7 @@
         vertical-align:top;
         letter-spacing:normal;
         word-spacing:0px;
-        margin:0xpx;
+        margin:0px;
         padding:30px 0px 0px;
         font-weight:400;
         text-transform:none;
@@ -1108,9 +1106,9 @@
             
     }
     img{
-        max-width: 398px;
+        max-width: 100%;
         height: auto;
-        margin: opx;
+        margin: 0px;
     }
     .textspace{
         font-family:"Roboto Slab";
@@ -1250,7 +1248,7 @@
     
 }
 .valuesetsection{
-    width: 414px;
+    width: 400px;
     background-color: white;
     margin-bottom:  30px;
     margin-right: 0px;
@@ -1570,7 +1568,7 @@ blockquote:before {
 
 }
 #submain{
-    width: 320px;
+    width: auto;
     line-height:20px;
     vertical-align:baseline;
     letter-spacing:normal;
@@ -1583,7 +1581,7 @@ blockquote:before {
 }
 
 
-@media screen and (max-width: 420px) {
+@media only screen and (max-width: 430px) {
     
     
     body{
@@ -1595,7 +1593,7 @@ blockquote:before {
     }
     
     #land{
-        max-width: 320px;
+        width: auto;
         margin: auto;
         display: block;
         grid-template-columns: auto;
@@ -1619,7 +1617,7 @@ blockquote:before {
         border-radius: 0px;
         position: fixed;
         z-index: 1;
-        width: 320px;
+        max-width: 420px;
         display: flex;
         padding: 0px 20px;
         max-height: 60px;
@@ -1650,7 +1648,7 @@ blockquote:before {
         max-height: 50px;
         cursor: pointer;
         padding: 0px;
-        transform: translateX(470px) translateY(2px);
+        float: left;
 
     }
 
@@ -1661,19 +1659,19 @@ blockquote:before {
 
     }
     #pagecontent{
-        max-width: 100%;
+        width: auto;
         margin: auto;
         display: flex;
         flex-direction: column;
     }
 
     
-    .nav{width: auto;
-    height: auto;
-    margin: 0px 0px 10px;
-    position: relative;
-    top: 40px;
-    padding: 25px 0px 0px;
+    .nav{
+        width: auto;
+        height: auto;
+        margin: 0px 0px 10px;
+        top: 40px;
+        padding: 25px 0px 0px;
     
     }
     .namecard{
@@ -1715,8 +1713,7 @@ blockquote:before {
         display: block;
         font-weight: 500;
         color: rgb(65, 65, 65);
-        width: 75%;
-        padding-bottom: ;
+        width: 85%;
     }
     .namecardsubtitle{
         color: rgb(140, 140, 140);
@@ -1732,47 +1729,51 @@ blockquote:before {
         overflow: hidden;
         background-size: auto;
         position: relative;
-        top:0px;
-        right: 10px;
-        left: 1px;
+        top:5px;
+        left: 25px;
         max-width: 100%;
     }
 
-    .navover{
-        width: auto;
-        height: 20px;
-        background-color:#b9ceeb;
-        padding-top: 8px;
-        margin-bottom: 10px;
-        text-decoration: none;
-        padding-right: 10px;
-        text-transform: uppercase;
-        padding-bottom: 2px;
-        
+         
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #b9ceeb;
+        justify-content: space-around;
     }
+      
+      .menu > div {
+        width: 100px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .navover{
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:0 ;
+        margin: 0 ;
+    }
+    
     .navover a {
         text-decoration: none;
-        color: #3170c4;
-        float: none;
-        padding-top: 0px;
+        padding:0 ;
+        margin: 0 ; 
     }
     .navhigh{
-        width: auto;
-        height: 20px;
-        background-color: #b9ceeb;
-        padding-top: 8px;
-        margin-bottom: 10px;
         text-decoration: none;
-        padding-right: 10px;
-        text-transform: uppercase;      
-        padding-bottom: 2px;
-        
-  
+        text-transform: uppercase; 
+        padding:0 ;
+        margin: 0 ;   
+
     }
     .navhigh a {
         text-decoration: none;
-        color: #3170c4;
-        float: none;
+        padding:0 ;
+        margin: 0 ; 
+
     }
     .navover a:hover {
         color:#ffa600;
@@ -1780,6 +1781,12 @@ blockquote:before {
     .navhigh a:hover {
         color:#ffa600;
     }
+    
+    a span {
+        display: none;
+        position: sticky;
+    }
+
     
     
     #pagecontent{
@@ -1802,16 +1809,16 @@ blockquote:before {
         float: left;
     }
     #toprow {
-        width: auto;
+        width: 170%;
         display: flex;
         flex-direction: column;
         height: auto;
         margin-bottom: 10px;
-        margin-right: 50px;
+        margin-right: -270px;
         margin-top: 42px;
     }
     #overview {
-        width:300px;
+        width: auto;
         height: auto;
         background-color:white;
         display: grid;
@@ -1826,7 +1833,7 @@ blockquote:before {
         vertical-align:baseline;
         letter-spacing:normal;
         word-spacing:0px;
-        margin:0px 0px 10px;
+        margin:0px 0px 0px;
         font-weight:400;
         text-transform:none;
     }
@@ -1850,7 +1857,7 @@ blockquote:before {
         letter-spacing:normal;
         word-spacing:0px;
         margin:0px 0px 0px;
-        padding:0px 10px;
+        padding-top: 10px;
         font-weight:400;
         text-transform:none;
     }
@@ -1859,16 +1866,17 @@ blockquote:before {
         color: rgb(86, 149, 230);
         display: block;
         line-height: 0px;
-        padding:20px 0px 20px;
         text-transform: uppercase;
+        
     }
     .ovsupertitle{
-        width: 320px;
+        width: 100%;
         font-size: 24px;
         line-height: 36px;
         white-space: normal;
         font-weight: 500;
         color: rgb(43, 43, 43);
+        padding: 20px 0px 20px 0px;
     }
     .ovsubtitle{
         color:#8c8c8c;
@@ -1877,28 +1885,27 @@ blockquote:before {
         vertical-align:top;
         letter-spacing:normal;
         margin-bottom: 8px;
-        padding: 10px 10px 10px 10px;
+        padding: 10px 80px 10px 20px;
         font-weight:400;
         text-transform:none;
         color: rgb(140, 140, 140);
         display: inline-block;
     }
     .image{
-        max-width: 300px;
+        width: auto;
         height: auto;
        
             
     }
     img{
-        width: auto;
+        width: 100%;
         height: auto;
-        margin-right: 10px;
     }
     .textspace{
         font-family:"Roboto Slab";
         color:#000000;
         font-size: 1.358rem;
-        line-height:20px;
+        line-height:21px;
         vertical-align:baseline;
         letter-spacing:normal;
         word-spacing:0px;
@@ -1911,7 +1918,7 @@ blockquote:before {
         font-family:"Roboto Slab";
         color:#414141;
         font-size: 18px;
-        line-height:20px;
+        line-height:21px;
         vertical-align:baseline;
         letter-spacing:normal;
         word-spacing:0px;
@@ -1928,9 +1935,9 @@ blockquote:before {
 /*snapshot starts here*/
             
 #snapshot {
-    width: 320px;
+    width: 60%;
     float: left;
-    height: 200px;
+    height: 220px;
     overflow: scroll;
     margin-left: 0px;
     margin-top: 10px;
@@ -1975,7 +1982,7 @@ blockquote:before {
     letter-spacing:normal;
     word-spacing:0px;
     margin:0px;
-    padding: 0px 10px;
+    padding: 0px 17px;
     font-weight:400;
     text-transform:none;
 }
@@ -2023,14 +2030,14 @@ blockquote:before {
 /*!valueset starts here*/
 
 #bottomrow {
-    width: 320px;
+    width: auto;
     display: flex;
     margin-right: 0px;
     flex-direction: column;
     
 }
 .valuesetsection{
-    width: 320px;
+    width: auto;
     background-color: white;
     margin-bottom:  30px;
     
@@ -2184,7 +2191,7 @@ blockquote:before {
     margin: 10px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
-    max-width: 320px;  
+    width: auto;
 }
 
 #quotehead{
@@ -2270,12 +2277,13 @@ blockquote:before {
 /*wizzlet starts here*/
 
 #wizzlets {
-    width: 320px;
+    width: auto;
     height: 275px;
     background-color:white;
     overflow: none;
     float: right;
     margin-left: 0px;
+    margin-right: 0px ;
     float: left; 
     display: grid; 
     grid-template-columns: auto;
@@ -2347,10 +2355,11 @@ blockquote:before {
     word-spacing:0px;
     margin:0px;
     padding:0px;
+    width: auto;
 
 }
 #submain{
-    width: 320px;
+    width: auto;
     line-height:20px;
     vertical-align:baseline;
     letter-spacing:normal;
